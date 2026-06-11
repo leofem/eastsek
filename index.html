@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eastsek AB | Trygga bostäder i Trollhättan</title>
+  <meta name="description" content="Eastsek AB förvaltar välskötta hyresbostäder med fokus på trygghet, tydlig kommunikation och långsiktigt boende." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Eastsek AB startsida">
+      <img src="assets/eastsek-logo.png" alt="Eastsek AB logotyp" />
+    </a>
+    <button class="nav-toggle" aria-label="Öppna meny">☰</button>
+    <nav class="main-nav">
+      <a href="#fastigheter">Fastigheter</a>
+      <a href="#hyresgast">För hyresgäster</a>
+      <a href="#felanmalan">Felanmälan</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg" role="img" aria-label="Fastighet på Slåttervägen"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Fastighetsförvaltning med närvaro</p>
+        <h1>Trygga bostäder med ordning, omsorg och långsiktig förvaltning.</h1>
+        <p class="lead">Eastsek AB erbjuder välskötta hyresbostäder där enkel kontakt, tydlig information och trivsam boendemiljö står i centrum.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#felanmalan">Gör felanmälan</a>
+          <a class="btn ghost" href="#kontakt">Kontakta oss</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <span>Tryggt</span>
+        <p>boende med personlig förvaltning</p>
+      </div>
+    </section>
+
+    <section class="section intro">
+      <div>
+        <p class="eyebrow dark">Eastsek AB</p>
+        <h2>En mindre hyresvärd med korta beslutsvägar.</h2>
+      </div>
+      <p>Vi arbetar nära våra hyresgäster och fastigheter. Målet är enkelt: bostäder som känns trygga, välskötta och smidiga att bo i, året runt.</p>
+    </section>
+
+    <section class="section stats">
+      <article><strong>Nära</strong><span>kontakt med hyresvärden</span></article>
+      <article><strong>Tryggt</strong><span>boende med tydliga rutiner</span></article>
+      <article><strong>Smidigt</strong><span>ärenden och information samlat</span></article>
+    </section>
+
+    <section class="section split" id="fastigheter">
+      <div class="image-panel">
+        <img src="assets/slattervagen.png" alt="Eastsek AB fastighet på Slåttervägen" />
+      </div>
+      <div class="content-panel">
+        <p class="eyebrow dark">Våra fastigheter</p>
+        <h2>Välskött boende i grön och lugn miljö.</h2>
+        <p>Eastsek AB förvaltar hyresbostäder med fokus på ordning, tillgänglighet och trivsel. Här finns närhet till vardagsservice, kommunikationer och grönområden.</p>
+        <ul class="check-list">
+          <li>Lägenheter i flera storlekar</li>
+          <li>Grönytor i direkt anslutning till huset</li>
+          <li>Parkering enligt separat överenskommelse</li>
+          <li>Lediga bostäder och kommande möjligheter presenteras löpande</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section cards" id="hyresgast">
+      <div class="section-title">
+        <p class="eyebrow dark">För hyresgäster</p>
+        <h2>Snabbt till rätt information.</h2>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <span class="icon">🔧</span>
+          <h3>Felanmälan</h3>
+          <p>Beskriv problemet tydligt, ange adress, lägenhetsnummer och kontaktuppgifter.</p>
+        </article>
+        <article class="card">
+          <span class="icon">🅿️</span>
+          <h3>Parkering</h3>
+          <p>Information om p-platser, tillstånd och regler lämnas av hyresvärden.</p>
+        </article>
+        <article class="card">
+          <span class="icon">📄</span>
+          <h3>Blanketter</h3>
+          <p>Här kan viktiga dokument och boendeinformation läggas upp framöver.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section form-section" id="felanmalan">
+      <div>
+        <h2>Skicka in ett ärende.</h2>
+        <p>Använd formuläret för felanmälan, störningsärenden eller övriga frågor. Ärendet skickas direkt till Eastsek.</p>
+      </div>
+      <form class="contact-form" id="faultForm" action="https://formsubmit.co/eastsekab@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Nytt ärende från Eastseks hemsida">
+        <input type="hidden" name="_captcha" value="false">
+        <label>Ärendetyp
+          <select name="ärendetyp" required>
+            <option value="">Välj ärendetyp</option>
+            <option>Felanmälan</option>
+            <option>Störningsärende</option>
+            <option>Kontakt / övrig fråga</option>
+          </select>
+        </label>
+        <label>Namn<input name="namn" type="text" required placeholder="För- och efternamn"></label>
+        <label>Adress / lägenhetsnummer<input name="adress_lagenhet" type="text" required placeholder="Ex. Slåttervägen 62, lgh 1001"></label>
+        <label>E-post eller annan kontaktväg<input name="kontakt" type="text" required placeholder="Hur når vi dig?"></label>
+        <label>Beskrivning<textarea name="meddelande" required placeholder="Beskriv ditt ärende så tydligt som möjligt"></textarea></label>
+        <button class="btn primary" type="submit">Skicka ärende</button>
+      </form>
+    </section>
+
+    <section class="section contact" id="kontakt">
+      <div>
+        <p class="eyebrow dark">Kontakt</p>
+        <h2>Kontakta Eastsek</h2>
+        <p>För frågor om boende, parkering, avtal, felanmälan eller störningsärenden, använd kontaktformuläret ovan.</p>
+      </div>
+      <div class="contact-box">
+        <p><strong>Adress:</strong> Medevigatan 1,<br>113 61 Stockholm</p>
+        <a class="btn ghost contact-link" href="#felanmalan">Till kontaktformuläret</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="assets/eastsek-logo.png" alt="Eastsek AB logotyp" />
+    <p>© <span id="year"></span> Eastsek AB. Alla rättigheter förbehållna.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
